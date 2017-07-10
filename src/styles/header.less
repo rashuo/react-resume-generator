@@ -1,0 +1,59 @@
+@import "app";
+
+@h-bgc: #2d2d2d;
+@h-fc: #f5f5f5;
+@name-font-size: 72px;
+@left-small-font-size: 20px;
+@header-tip-font-color: #d5d5d5;
+@contact-font-size: 16px;
+
+header {
+  background-color: @h-bgc;
+  color: @h-fc;
+  padding: 10px 45px;
+  text-align: left;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .2);
+  width: 100%;
+  .flex(row, nowrap, space-between, flex-start);
+
+  aside {
+    .flex(column, nowrap, space-between, flex-start);
+  }
+}
+
+header .header-left {
+  margin: 0;
+  h1 {
+    font-size: @name-font-size;
+    margin: 10px 0;
+  }
+  small {
+    font-size: @left-small-font-size;
+  }
+}
+header .header-right {
+  font-size: @contact-font-size;
+  margin-top: 20px;
+  line-height: 160%;
+  font-weight: 300;
+
+  .icon {
+    width: 22px;
+    color: @header-tip-font-color;
+    font-weight: 100;
+  }
+  .tip {
+    display: inline-block;
+    width: 60px;
+    margin: auto 3px;
+    color: @header-tip-font-color;
+    font-size: @contact-font-size - 2;
+    font-weight: 200;
+  }
+  a {
+    color: @h-fc;
+    text-decoration: none;
+    font-size: @contact-font-size;
+    font-weight: 700;
+  }
+}

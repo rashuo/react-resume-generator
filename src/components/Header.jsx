@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import FontAwesome from 'react-fontawesome'
-import '../styles/app.less'
+import 'styles/header'
 
 const propTypes = {
   name: PropTypes.string.isRequired,
@@ -18,15 +18,40 @@ const defaultProps = {
   contact: []
 }
 
-const Header = () => {
+
+const renderSummary = (summary) => {
+  return summary.map((item, index) => {
+    return (
+        <small key={index}>{item}</small>
+    )
+  })
+}
+const renderContact = (contact) => {
+  return contact.map((item, index) => {
+    return (
+        <small>
+          <FontAwesome className="icon" name={item.icon} />
+          <span className="tip">{item.name}</span>
+          <a href={item.url}>{item.show}</a>
+        </small>
+    )
+  })
+}
+const Header = ({name, summary, contact}) => {
   return (
     <header>
-      <div className="row">
-        hello world
-      </div>
+      <aside className="header-left">
+        <h1>{name}</h1>
+        {renderSummary(summary)}
+      </aside>
+      <aside className="header-right">
+        {renderContact(contact)}
+      </aside>
     </header>
   )
 }
 
 Header.propTypes = propTypes;
 Header.defaultProps = defaultProps;
+
+export default Header;

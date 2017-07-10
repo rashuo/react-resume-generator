@@ -1,0 +1,86 @@
+@bgc: #a5a5a5;
+@grid: 12;
+@md-min: 992px;
+@sm-min: 729px;
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: @bgc;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei", "MicrosoftJhengHei", STHeiti, MingLiu;
+}
+
+.container {
+  height: 100%;
+  margin: 5px auto 5px;
+}
+.flex(@dir, @wrap, @horizontal, @vertical) {
+  display: flex;
+  flex-flow: @dir @wrap;
+  justify-content: @horizontal;
+  align-items: @vertical;
+}
+
+.clearFix() {
+  &:after {
+    display: block;
+    height: 0;
+    content: ' ';
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+  }
+}
+.row {
+  margin-left: -.1px;
+  margin-right: -.1px;
+  .clearFix();
+}
+.col-mixin(@name; @sz:1) when(@sz<=@grid) {
+  .col-@{name}-@{sz} {
+    float: left;
+    width: 100%/12*@sz;
+  }
+  .col-mixin(@name, @sz+1);
+}
+@media print {
+  .container {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (min-width: @md-min) {
+  .col-mixin(md);
+  .container {
+    width: 970px !important;
+  }
+}
+
+@media (min-width: @sm-min) {
+  .col-mixin(@sm-min);
+  .container {
+    width: 765px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

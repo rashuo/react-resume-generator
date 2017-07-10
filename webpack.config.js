@@ -20,9 +20,17 @@ var config = {
     filename: '[name].[hash].js',
     chunkFilename:'[name].[hash].js'
   },
+  resolve: {
+    // directories where to look for modules
+    modules: [
+      "node_modules",
+      path.resolve(__dirname, "./src")
+    ],
+    extensions: ['.js', '.json', '.jsx', '.less']
+  },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -36,12 +44,15 @@ var config = {
         loader: 'json-loader',
       }, {
         test: /\.css$/,
+        exclude: /node_modules/,
         loader: 'style-loader!css-loader'
       }, {
         test: /\.less$/,
+        exclude: /node_modules/,
         loader: 'style-loader!css-loader!postcss-loader!less-loader'
       }, {
         test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+        exclude: /node_modules/,
         loader: 'url-loader?limit=50000&name=[path][name].[ext]'
       }
     ],
@@ -54,16 +65,14 @@ var config = {
       inject: true,
       template: 'src/index.html',
       filename: 'index.html'
+    }),
+    new webpack.DefinePlugin({
+      '__DEV__':  nodeDev=='development'
     })
   ]
 };
 
 if (production) {
-  config.plugins.push(new webpack.DefinePlugin({
-    'process.env': {
-      NODE_ENV: JSON.stringify(nodeDev),
-    },
-  }));
   config.plugins.push(new webpack.optimize.UglifyJsPlugin({
     output: {
       comments: false,  // remove all comments

@@ -1,0 +1,154 @@
+{
+  "name": "澳拔码",
+  "summary": ["男 / 21岁 / 2015年应届毕业生", "动能攻城狮"],
+  "contact": [
+    {
+      "icon": "phone",
+      "name": "手机",
+      "show": "11001199999"
+    },
+    {
+      "icon": "envelope",
+      "name": "邮箱",
+      "url": "xxxxxx@gmail.com",
+      "show": "xxxxxx@gmail.com"
+    },
+    {
+      "icon": "github",
+      "name": "Github",
+      "url": "https://github.com/xxxxxx",
+      "show": "https://github.com/xxxxxx"
+    },
+    {
+      "icon": "qq",
+      "name": "QQ",
+      "show": "00000000"
+    },
+    {
+      "icon": "wechat",
+      "name": "微信",
+      "show": "princess"
+    }
+  ],
+  "details": {
+    "left": [
+      {
+        "name": "教育经历",
+        "icon": "book",
+        "list": [
+          {
+            "title": "火国星际穿越大学",
+            "subtitle": "虫洞学 (本科)",
+            "icon": "university",
+            "duration": "5819 ~ 5923",
+            "description": [
+              "软件工程 (本科)",
+              "大一加入了校 sm 团队，多次参与 sm 竞赛。",
+              "对格斗技术有极大的兴趣，热衷于新技能的学习与探索。"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "项目和实习经历",
+        "icon": "rocket",
+        "list": [
+          {
+            "title": "复仇者联盟 动能研究（实习）",
+            "icon": "send",
+            "duration": "2016/04 ~ 2016/06",
+            "intro": "维护复仇者联盟动能系统，燃料基于O2O, 产品分为 动能 / 动力 两个部分",
+            "description": [
+              "在系统中增加核聚变",
+              "在项目中增加纳米技术"
+            ]
+          },
+          {
+            "title": "复仇者联盟 动能研究（实习）",
+            "icon": "send",
+            "duration": "2016/04 ~ 2016/06",
+            "intro": "维护复仇者联盟动能系统，燃料基于O2O, 产品分为 动能 / 动力 两个部分",
+            "description": [
+              "在系统中增加核聚变",
+              "在项目中增加纳米技术"
+            ]
+          },
+          {
+            "title": "复仇者联盟 动能研究（实习）",
+            "icon": "send",
+            "duration": "2016/04 ~ 2016/06",
+            "intro": "维护复仇者联盟动能系统，燃料基于O2O, 产品分为 动能 / 动力 两个部分",
+            "description": [
+              "在系统中增加核聚变",
+              "在项目中增加纳米技术"
+            ]
+          },
+          {
+            "title": "复仇者联盟 动能研究（实习）",
+            "icon": "send",
+            "duration": "2016/04 ~ 2016/06",
+            "intro": "维护复仇者联盟动能系统，燃料基于O2O, 产品分为 动能 / 动力 两个部分",
+            "description": [
+              "在系统中增加核聚变",
+              "在项目中增加纳米技术"
+            ]
+          }
+        ]
+      }
+    ],
+    "right": [
+      {
+        "name": "竞赛经历",
+        "icon": "flag",
+        "list": [
+          {
+            "title": "SM ICPC 竞赛",
+            "icon": "bookmark",
+            "duration": "9999 ~ 9999",
+            "honor": [
+              "0000.06 火星西部高校首届暨联盟第10000届大学生SM动能设计竞赛 **金奖**",
+              "9999.10 第四十届SM-ICPC国际大学生动能设计竞赛西部区垃圾站 **Gold Medal**",
+              "9999.10 第四十届SM-ICPC国际大学生动能设计竞赛西部区垃圾站 **Gold Medal**"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "技能修养",
+        "icon": "wrench",
+        "list": [
+          {
+            "title": "SM ICPC 竞赛",
+            "icon": "bookmark",
+            "duration": "9999 ~ 9999",
+            "honor": [
+              "0000.06 火星西部高校首届暨联盟第10000届大学生SM动能设计竞赛 **金奖**",
+              "9999.10 第四十届SM-ICPC国际大学生动能设计竞赛西部区垃圾站 **Gold Medal**",
+              "9999.10 第四十届SM-ICPC国际大学生动能设计竞赛西部区垃圾站 **Gold Medal**"
+            ]
+          },
+          {
+            "title": "SM ICPC 竞赛",
+            "icon": "bookmark",
+            "duration": "9999 ~ 9999",
+            "honor": [
+              "0000.06 火星西部高校首届暨联盟第10000届大学生SM动能设计竞赛 **金奖**",
+              "9999.10 第四十届SM-ICPC国际大学生动能设计竞赛西部区垃圾站 **Gold Medal**",
+              "9999.10 第四十届SM-ICPC国际大学生动能设计竞赛西部区垃圾站 **Gold Medal**"
+            ]
+          },
+          {
+            "title": "SM ICPC 竞赛",
+            "icon": "bookmark",
+            "duration": "9999 ~ 9999",
+            "honor": [
+              "0000.06 火星西部高校首届暨联盟第10000届大学生SM动能设计竞赛 **金奖**",
+              "9999.10 第四十届SM-ICPC国际大学生动能设计竞赛西部区垃圾站 **Gold Medal**",
+              "9999.10 第四十届SM-ICPC国际大学生动能设计竞赛西部区垃圾站 **Gold Medal**"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
