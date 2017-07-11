@@ -1,9 +1,11 @@
 # react-resume-generator
 
 ### How To Use
-**step 1**: `npm run start`
+**step 1**: `npm install`
 
-**step 2**: modify `src/data/template.json`
+**step 2**: `npm run start`
+
+**step 3**: modify `src/data/template.json`
 
 ![example png](example.png)
 
