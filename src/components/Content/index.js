@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-import FontAwesome from 'react-fontawesome'
 import 'styles/content'
 import Timeline from './timeline'
 
