@@ -2,6 +2,7 @@
 
 ### How To Use
 **step 1**: `npm run start`
+
 **step 2**: modify `src/data/template.json`
 
 ![example png](example.png)
