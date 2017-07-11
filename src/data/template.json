@@ -1,6 +1,6 @@
 {
   "name": "澳拔码",
-  "summary": ["男 / 21岁 / 2015年应届毕业生", "动能攻城狮"],
+  "summary": ["男 / 21岁 / 2015年毕业生", "动能攻城狮"],
   "contact": [
     {
       "icon": "phone",
@@ -40,7 +40,8 @@
             "title": "火国星际穿越大学",
             "subtitle": "虫洞学 (本科)",
             "icon": "university",
-            "duration": "5819 ~ 5923",
+            "repo": "https://github.com/xxxxx",
+            "demo": "http://www.hello.com/xxxxx",
             "description": [
               "软件工程 (本科)",
               "大一加入了校 sm 团队，多次参与 sm 竞赛。",

@@ -1,7 +1,6 @@
+@import './_common';
 @bgc: #a5a5a5;
-@grid: 12;
-@md-min: 992px;
-@sm-min: 729px;
+
 
 html, body {
   box-sizing: border-box;
@@ -19,26 +18,13 @@ html, body {
   height: 100%;
   margin: 5px auto 5px;
 }
-.flex(@dir, @wrap, @horizontal, @vertical) {
-  display: flex;
-  flex-flow: @dir @wrap;
-  justify-content: @horizontal;
-  align-items: @vertical;
-}
 
-.clearFix() {
-  &:after {
-    display: block;
-    height: 0;
-    content: ' ';
-    visibility: hidden;
-    clear: both;
-    font-size: 0;
-  }
-}
+
+
+
 .row {
-  margin-left: -.1px;
-  margin-right: -.1px;
+  margin-left: 0px;
+  margin-right: 0px;
   .clearFix();
 }
 .col-mixin(@name; @sz:1) when(@sz<=@grid) {
@@ -63,14 +49,11 @@ html, body {
 }
 
 @media (min-width: @sm-min) {
-  .col-mixin(@sm-min);
+  .col-mixin(sm);
   .container {
     width: 765px;
   }
 }
-
-
-
 
 
 

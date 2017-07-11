@@ -1,0 +1,87 @@
+@import "./_common";
+@cyan-color: #2aa198;
+@content-color: #444;
+@important-color: @cyan-color;
+
+@big-red: #dc322f;
+
+.content {
+  background-color: #f5f5f5;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, .2);
+  padding: 0px 5px 20px 45px;
+}
+
+
+
+.content .time-line {
+  .time-line-header h3 {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .tli-title {
+    position: relative;
+    margin-left: 10px;
+    height: 42px;
+    .clearFix();
+
+    &:before {
+      content: "=>";
+      color: @big-red;
+    }
+    h4 {
+      display: inline;
+      color: @big-red;
+      margin: 10px 0 10px 10px;
+    }
+    .duration {
+      display: inline-block;
+      color: @cyan-color;
+      float: right;
+      &:before {
+        content: "[";
+      }
+      &:after {
+        content: "]";
+      }
+      a {
+        text-decoration: none;
+        color: @cyan-color;
+      }
+    }
+  }
+  .tli-body {
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  .tli-body>div {
+    margin: 10px 0 2px;
+    .icon {
+      width: 20px;
+      height: 20px;
+      float: left;
+      color: @content-color;
+
+      &:before {
+        line-height: 20px;
+        vertical-align: middle;
+      }
+    }
+  }
+  p {
+    color: @content-color;
+    margin: 0;
+    margin-left: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    vertical-align: text-bottom;
+    font-weight: 300;
+    font-family: Helvetica, 'Hiragino Sans GB', "Microsoft YaHei","MicrosoftJhengHei";
+  }
+  strong {
+    color: @important-color;
+    line-height: 20px;
+    letter-spacing: 0;
+    padding: 0 2px;
+    font-weight: 500;
+  }
+}

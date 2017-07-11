@@ -1,0 +1,21 @@
+@grid: 12;
+@md-min: 992px;
+@sm-min: 729px;
+
+.flex(@dir, @wrap, @horizontal, @vertical) {
+  display: flex;
+  flex-flow: @dir @wrap;
+  justify-content: @horizontal;
+  align-items: @vertical;
+}
+
+.clearFix() {
+  &:after {
+    display: block;
+    height: 0;
+    content: ' ';
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+  }
+}

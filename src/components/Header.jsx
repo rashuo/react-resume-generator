@@ -29,7 +29,7 @@ const renderSummary = (summary) => {
 const renderContact = (contact) => {
   return contact.map((item, index) => {
     return (
-        <small>
+        <small key={index}>
           <FontAwesome className="icon" name={item.icon} />
           <span className="tip">{item.name}</span>
           <a href={item.url}>{item.show}</a>
