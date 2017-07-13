@@ -5,7 +5,9 @@
   ],
   "env": {
     "es6": true,
-    "browser": true
+    "browser": true,
+    "node": true,
+    "mocha": true
   },
   "parser": "babel-eslint",
   "rules": {
@@ -14,6 +16,9 @@
     "arrow-body-style": [2, "always"],
     "react/jsx-filename-extension": 0,
     "react/no-array-index-key": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
     "import/extentions": 0
   }
 }

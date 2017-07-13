@@ -22,18 +22,18 @@ const defaultProps = {
 const renderSummary = (summary) => {
   return summary.map((item, index) => {
     return (
-        <small key={index}>{item}</small>
+      <small key={index}>{item}</small>
     )
   })
 }
 const renderContact = (contact) => {
   return contact.map((item, index) => {
     return (
-        <small key={index}>
-          <FontAwesome className="icon" name={item.icon} />
-          <span className="tip">{item.name}</span>
-          <a href={item.url}>{item.show}</a>
-        </small>
+      <small key={index}>
+        <FontAwesome className="icon" name={item.icon} />
+        <span className="tip">{item.name}</span>
+        <a href={item.url}>{item.show}</a>
+      </small>
     )
   })
 }
@@ -51,7 +51,7 @@ const Header = ({name, summary, contact}) => {
   )
 }
 
-Header.propTypes = propTypes;
-Header.defaultProps = defaultProps;
+Header.propTypes = propTypes
+Header.defaultProps = defaultProps
 
-export default Header;
+export default Header
