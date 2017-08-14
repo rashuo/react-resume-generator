@@ -1,7 +1,8 @@
 import { render } from 'react-dom'
 import React from 'react'
 import 'styles/app'
-import resume from 'data/template'
+// import resume from 'data/template'
+import resume from 'data/my'
 import Header from 'components/Header'
 import Content from 'components/Content'
 
