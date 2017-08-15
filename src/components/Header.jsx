@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import FontAwesome from 'react-fontawesome'
 import 'styles/header'
 
@@ -38,6 +39,7 @@ const renderContact = (contact) => {
   })
 }
 const Header = ({name, summary, contact}) => {
+  console.log('name: ', name)
   return (
     <header>
       <aside className="header-left">
